@@ -12,7 +12,6 @@
 		6A5D4C0F1A88210200FFFA2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4C0E1A88210200FFFA2F /* ViewController.m */; };
 		6A5D4C121A88210200FFFA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D4C101A88210200FFFA2F /* Main.storyboard */; };
 		6A5D4C141A88210200FFFA2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D4C131A88210200FFFA2F /* Images.xcassets */; };
-		6A5D4C171A88210200FFFA2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D4C151A88210200FFFA2F /* LaunchScreen.xib */; };
 		6A5D4C231A88210300FFFA2F /* sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4C221A88210300FFFA2F /* sampleTests.m */; };
 		6A5D4C2E1A88231C00FFFA2F /* SampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D4C2D1A88231C00FFFA2F /* SampleView.m */; };
 		6A5D4C301A88232A00FFFA2F /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D4C2F1A88232A00FFFA2F /* SampleView.xib */; };
@@ -38,7 +37,6 @@
 		6A5D4C0E1A88210200FFFA2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6A5D4C111A88210200FFFA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A5D4C131A88210200FFFA2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6A5D4C161A88210200FFFA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6A5D4C1C1A88210300FFFA2F /* sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5D4C211A88210300FFFA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5D4C221A88210300FFFA2F /* sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleTests.m; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				6A5D4C0E1A88210200FFFA2F /* ViewController.m */,
 				6A5D4C101A88210200FFFA2F /* Main.storyboard */,
 				6A5D4C131A88210200FFFA2F /* Images.xcassets */,
-				6A5D4C151A88210200FFFA2F /* LaunchScreen.xib */,
 				6A5D4C061A88210200FFFA2F /* Supporting Files */,
 				6A5D4C2C1A88231C00FFFA2F /* SampleView.h */,
 				6A5D4C2D1A88231C00FFFA2F /* SampleView.m */,
@@ -209,7 +206,6 @@
 			files = (
 				6A5D4C301A88232A00FFFA2F /* SampleView.xib in Resources */,
 				6A5D4C121A88210200FFFA2F /* Main.storyboard in Resources */,
-				6A5D4C171A88210200FFFA2F /* LaunchScreen.xib in Resources */,
 				6A5D4C141A88210200FFFA2F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,14 +256,6 @@
 				6A5D4C111A88210200FFFA2F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6A5D4C151A88210200FFFA2F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A5D4C161A88210200FFFA2F /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -355,9 +343,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -365,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -424,6 +418,7 @@
 				6A5D4C281A88210300FFFA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A5D4C291A88210300FFFA2F /* Build configuration list for PBXNativeTarget "sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +427,7 @@
 				6A5D4C2B1A88210300FFFA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
